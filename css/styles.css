@@ -185,7 +185,7 @@ margin-bottom: -.1em;
 
 /*INICIO DE CONTACTOS */
 
-article.container{
+.container{
 display: grid;
 place-items: center;
 min-height: 100vh;
@@ -376,10 +376,39 @@ margin-bottom: .7em;
 
 
 /* INICIO DE CURSOS*/
+
+.titulos{
+text-align: center;
+font-family: 'Poppins';
+font-size:2em;
+font-weight: bold;
+}
+
+.espace-text{
+margin-top: 4em;
+margin-bottom: 3em;
+}
+
+.beneficios-grid{
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    justify-content: center;
+    place-items: center;
+    min-height: 15vh;
+}
+
+.espacio{
+    display: grid;
+    place-items: center;
+    text-align: center;  
+}
+
 .cards-grid{
     display: grid;
     gap: 1em;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    min-height: 20vh;
 }
 
 .card{
@@ -390,6 +419,7 @@ margin-bottom: .7em;
 
 .card-img img{
     border-radius: .5em .5em 0 0;
+    box-shadow: 0 0 4px var(--colorSombras);
 }
 
 .card-content{
@@ -412,19 +442,36 @@ margin-bottom: .7em;
 .card-info{
     font-family: 'Poppins';
     font-size: 1em;
-    background-color: var(--colorPrimario);
-    color:#fff;
+    background-color: transparent;
+    color: var(--colorPrimario);
     padding: .5em;
     border-radius: .5em;
     text-align: center;
-    display: block; 
-    transition: background-color .3s ease-in-out;
+    display: block;
+    border: 2px solid var(--colorPrimario);
+    transition: all .3s ease-in-out;
 }
 
 .card-info:hover{
-    background-color: var(--colorSecundario);
+    background-color: var(--colorPrimario);
     color:#fff;
     transition: background-color .3s ease-in-out;
 }
 
+.boton-info{
+    grid-column: 1 / -1;
+    justify-self: center;
+    padding: .6em 1.5em;
+    border: 2px solid var(--colorPrimario);
+    color: var(--colorPrimario);
+    text-decoration: none;
+    border-radius: .5em;
+}
+
+.boton-info:hover{
+    background: var(--colorPrimario);
+    color: #fff;
+}
+
 /* FIN DE CARDS */
+
